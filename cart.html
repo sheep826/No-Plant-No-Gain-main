@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo"><span>No Plant No Gain</span></a>
+        <nav>
+            <a href="potted.html">室內盆栽</a>
+            <a href="tool.html">盆栽工具</a>
+            <a href="takecare.html">植物照顧</a>
+            <a href="choose.html">挑選指南</a>
+            <a href="member.html">會員專區</a>
+            <a href="aboutus.html">關於我們</a>
+        </nav>
+        <div class="iconbox">
+            <a href="login.html"><img src="assets/images/user-profile.png" alt="user"></a>
+            <a href="cart.html"><img src="assets/images/shopping-cart.png" alt="cart"></a>
+        </div>
+    </header>
+    <main>
+        <div class="cart">
+            <h1>購買項目</h1>
+            <table>
+            <tr>
+                <th>商品</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>小計</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>金柳</td>
+                <td>345</td>
+                <td>
+                    <button onclick="minus(this)">-</button>
+                    <input id="quantity" type="text" value="1">
+                    <button onclick="plus(this)">+</button>
+                </td>
+                <td>345</td>
+                <td class="del" onclick="deltr(this)">刪除</td>
+            </tr>
+            <tr>
+                <td>白葉到手香</td>
+                <td>130</td>
+                <td>
+                    <button onclick="minus(this)">-</button>
+                    <input id="quantity" type="text" value="2">
+                    <button onclick="plus(this)">+</button>
+                </td>
+                <td>260</td>
+                <td class="del" onclick="deltr(this)">刪除</td>
+            </tr>
+            </table>
+            <script src="assets/js/cart.js"></script>
+        </div>
+        
+        <hr>
+        <form action="" method="post">
+            <table>
+                <tr><th>寄送資料</th></tr>
+                <tr><td>收件人姓名：</td></tr>
+                <tr><td><input type="text" name="user" id="user"></td></tr>
+                <tr><td>連絡電話：</td></tr>
+                <tr><td><input type="text" name="phone" id="phone"></td></tr>
+                <tr><td>配送方式：</td></tr>
+                <tr>
+                    <td>
+                        <select name="methon" id="">
+                            <option value="">宅配到府</option>
+                            <option value="">7-11貨到付款</option>
+                            <option value="">全家貨到付款</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td>地址：(若選擇超商則填寫超商門市)</td></tr>
+                <tr><td><input type="text" name="address" id="address"></td></tr>
+            </table>
+            <div class="btn"><a href="finish.html"><input type="button" name="submit" id="submit" value="送出訂單"></a></div>
+            
+        </form>
+    </main>
+    <footer>
+        <p>
+            © 2021 曾順莉 楊芷昀 洪語婕 林奕萱 版權所有
+        </p>
+    </footer>
+
+</body>
+</html>

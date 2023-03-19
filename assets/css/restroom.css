@@ -1,0 +1,182 @@
+/*common*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border: none;
+}
+
+#logo span {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav a{
+    font-size: 20px;
+	padding: 20px;
+	border-bottom: 5px solid transparent;
+	transition: 0.3s;
+}
+nav a:hover {
+	border-bottom: 5px solid gray;
+}
+
+.iconbox img{
+    width: 30px;
+    margin: 20px;
+}
+
+main{
+    min-height: calc(100% - 100px);
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 5;
+}
+
+.top img {
+    width: 60px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0;
+    font-size: 18px;
+}
+
+/*living*/
+body{
+	scroll-behavior: smooth;
+}
+#liv{
+	margin: 5%;
+	text-align: center;
+
+}
+#liv .bigimg{
+	width: 80%;
+	
+}
+#liv p{
+	position: relative;
+	text-align: left;
+	margin: 50px 10%;
+	font-size: 20px;
+}
+
+.box-2{
+    position: relative;
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .img_div {
+    position: relative;
+    width: 350px;
+    height: 233px;
+    margin: 50px 0;
+  }
+  
+  .img_div img{
+    width: 350px;
+    height: 233px;
+  }
+  
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 233px;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+  }
+  
+  .mask h3 {
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    margin-top: calc(35% - 20px);
+  }
+  
+  .img_div a:hover .mask {
+    opacity: 1;           
+  }
+  
+  .goodname {
+    text-align: center;
+  }
+  
+  h5{
+    text-align: center;
+  }
+
+.goback{
+	position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 5;
+}
+.goback img{
+	 width: 60px;
+    cursor: pointer;
+}
